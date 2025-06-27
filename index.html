@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Sliding Panel Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container" id="gallery">
+        <div class="panel-wrapper">
+            <div class="image-panel" data-index="0">
+                <div class="panel-content">
+                    <div class="panel-image" style="background-image: url('https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_1280.jpg');">
+                        <div class="discount-tag">-25%</div>
+                        <div class="price-tag">
+                            <span class="original-price">$99</span>$74
+                        </div>
+                    </div>
+                    <div class="panel-info">
+                        <div>
+                            <div class="panel-title">Wireless Headphones</div>
+                            <div class="panel-description">Premium noise-cancelling wireless headphones with superior sound quality.</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-buy">Buy Now</button>
+                            <button class="btn btn-cart">Add to Cart</button>
+                            <button class="favorite-btn" onclick="toggleFavorite(this)">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-panel" data-index="1">
+                <div class="panel-content">
+                    <div class="panel-image" style="background-image: url('https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-the-smartwatch-banner-png-image_11919210.png');">
+                        <div class="price-tag">$89</div>
+                    </div>
+                    <div class="panel-info">
+                        <div>
+                            <div class="panel-title">Smart Watch</div>
+                            <div class="panel-description">Advanced fitness tracking smartwatch with heart rate monitor and GPS.</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-buy">Buy Now</button>
+                            <button class="btn btn-cart">Add to Cart</button>
+                            <button class="favorite-btn" onclick="toggleFavorite(this)">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-panel" data-index="2">
+                <div class="panel-content">
+                    <div class="panel-image" style="background-image: url('https://www.pngplay.com/wp-content/uploads/2/Gaming-Pc-Mouse-PNG-Clipart-Background.png');">
+                        <div class="discount-tag">-40%</div>
+                        <div class="price-tag">
+                            <span class="original-price">$120</span>$72
+                        </div>
+                    </div>
+                    <div class="panel-info">
+                        <div>
+                            <div class="panel-title">Gaming Mouse</div>
+                            <div class="panel-description">High-precision gaming mouse with RGB lighting and customizable buttons.</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-buy">Buy Now</button>
+                            <button class="btn btn-cart">Add to Cart</button>
+                            <button class="favorite-btn" onclick="toggleFavorite(this)">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-panel" data-index="3">
+                <div class="panel-content">
+                    <div class="panel-image" style="background-image: url('https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-black-sunglasses-eyewear-png-image_11671474.png');">
+                        <div class="discount-tag">-15%</div>
+                        <div class="price-tag">
+                            <span class="original-price">$95</span>$81
+                        </div>
+                    </div>
+                    <div class="panel-info">
+                        <div>
+                            <div class="panel-title">Sunglasses</div>
+                            <div class="panel-description">Stylish polarized sunglasses with UV protection and premium frame.</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-buy">Buy Now</button>
+                            <button class="btn btn-cart">Add to Cart</button>
+                            <button class="favorite-btn" onclick="toggleFavorite(this)">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-panel" data-index="4">
+                <div class="panel-content">
+                    <div class="panel-image" style="background-image: url('https://pngimg.com/d/running_shoes_PNG5817.png');">
+                        <div class="price-tag">$65</div>
+                    </div>
+                    <div class="panel-info">
+                        <div>
+                            <div class="panel-title">Running Shoes</div>
+                            <div class="panel-description">Lightweight running shoes with superior cushioning and breathable design.</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-buy">Buy Now</button>
+                            <button class="btn btn-cart">Add to Cart</button>
+                            <button class="favorite-btn" onclick="toggleFavorite(this)">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-panel" data-index="5">
+                <div class="panel-content">
+                    <div class="panel-image" style="background-image: url('https://static.vecteezy.com/system/resources/previews/047/457/633/non_2x/ladies-hand-bag-female-luxury-pink-leather-purse-isolated-on-transparent-background-cut-out-png.png');">
+                        <div class="discount-tag">-30%</div>
+                        <div class="price-tag">
+                            <span class="original-price">$110</span>$77
+                        </div>
+                    </div>
+                    <div class="panel-info">
+                        <div>
+                            <div class="panel-title">Leather Bag</div>
+                            <div class="panel-description">Premium leather messenger bag with multiple compartments and classic design.</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-buy">Buy Now</button>
+                            <button class="btn btn-cart">Add to Cart</button>
+                            <button class="favorite-btn" onclick="toggleFavorite(this)">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-panel" data-index="6">
+                <div class="panel-content">
+                    <div class="panel-image" style="background-image: url('https://pngimg.com/d/coffee_machine_PNG17291.png');">
+                        <div class="price-tag">$93</div>
+                    </div>
+                    <div class="panel-info">
+                        <div>
+                            <div class="panel-title">Coffee Maker</div>
+                            <div class="panel-description">Professional espresso machine with built-in grinder and milk frother.</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-buy">Buy Now</button>
+                            <button class="btn btn-cart">Add to Cart</button>
+                            <button class="favorite-btn" onclick="toggleFavorite(this)">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator" id="indicator">
+        <div class="indicator-dot active" data-panel="0"></div>
+        <div class="indicator-dot" data-panel="1"></div>
+        <div class="indicator-dot" data-panel="2"></div>
+        <div class="indicator-dot" data-panel="3"></div>
+        <div class="indicator-dot" data-panel="4"></div>
+        <div class="indicator-dot" data-panel="5"></div>
+        <div class="indicator-dot" data-panel="6"></div>
+    </div>
+
+    <div class="scroll-hint">← Scroll to explore →</div>
+<script src="script.js"></script>
+</body>
+</html>
