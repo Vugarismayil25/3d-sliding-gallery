@@ -34,7 +34,7 @@ A modern product gallery designed for e-commerce websites with stunning 3D trans
 ### Quick Start
 ```bash
 # Clone the project
-git clone https://github.com/username/3d-sliding-gallery.git
+git clone https://github.com/Vugarismayil25/3d-sliding-gallery.git
 
 # Navigate to folder
 cd 3d-sliding-gallery
